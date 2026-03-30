@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(31, 33, 51);
+}
+
+ul {
+    display: flex;
+    margin-top: 28px;
+    list-style: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+    margin-left: 70px;
+}
+
+.list {
+    margin-left: 650px;
+    display: flex;
+    float: right;
+}
+
+ul a {
+    font-family: "Montserrat", sans-serif;
+}
+
+.list ul li a:hover {
+    color: #ff6347;
+    transform: translateY(-5px);
+}
+
+.gallery__container {
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+.section__header {
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__grid img {
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.gallery__grid:hover img:not(:hover) {
+    opacity: 0.5;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.gallery__item:hover .description {
+    opacity: 1;
+}
+
+.gallery__btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery__btn .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.gallery__btn .btn:hover {
+    background-color: #394287;
+    border-radius: 20px;
+    transition: 0.3s;
+}
