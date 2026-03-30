@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Malcolm Lismore Photography</title>
+    <link rel="stylesheet" href="Login.css">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-form {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent for readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .login-form h2 {
+            text-align: center;
+            font-size: 25px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        .login-form label {
+            font-size: 18px;
+            color: #000;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .login-form input[type="submit"],
+        .login-form input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 5px;
+        }
+        .login-form input[type="submit"]:hover,
+        .login-form input[type="reset"]:hover {
+            background-color: #333;
+        }
+        .login-form img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-form" method="post" action="LogProcess.php">
+        <h2>Login</h2>
+        <label for="txtUN">Username</label>
+        <input type="text" name="txtUN" id="txtUN" placeholder="Enter Username" required />
+        
+        <label for="txtPW">Password</label>
+        <input type="password" name="txtPW" id="txtPW" placeholder="Enter Password" required />
+
+        <img src="Images/Lock.png" alt="Lock Icon">
+        
+        <div class="btn-group">
+            <input type="submit" class="style1" id="btnSave" value="Login"/>
+            <input type="reset" class="style1" id="btnCl2" value="Clear" />
+        </div>
+    </form>
+</body>
+</html>

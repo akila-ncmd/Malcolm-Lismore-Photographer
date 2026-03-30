@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Malcolm Lismore Photography</title>
+    <link rel="stylesheet" href="admin.css"> 
+</head>
+<body>
+    <header>
+    
+        <nav class="navbar">
+        <div class="navbar-logo">
+                <a href="HomePage.php"><img src="Images\web-icon.png" alt="Malcolm's Logo"></a>
+            </div>
+            <ul>
+				<li><a href="Logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-page">
+        <h1>Admin Panel</h1>
+        <section class="admin-section">
+            <h2>Manage Gallery</h2>
+            <p>Add, update, or delete photos in the gallery.</p>
+            <button onClick="location.href='manage-gallery.html'">Manage Gallery</button>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Prices</h2>
+            <p>Update photography packages and prices.</p>
+            <button onClick="location.href='manage-prices.php'">Manage Prices</button>
+        </section>
+
+        <section class="admin-section">
+            <h2>View Inquiries</h2>
+            <p>Check customer inquiries and respond to them.</p>
+            <button onClick="location.href='view-inquiries.php'">View Inquiries</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Malcolm Lismore Photography</p>
+    </footer>
+</body>
+</html>

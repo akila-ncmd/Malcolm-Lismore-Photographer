@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Admin Page Styles */
+.admin-page {
+    padding: 40px;
+    text-align: center;
+    background-color: #f7f7f7; /* Light background */
+}
+
+.admin-section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White box */
+    width: 80%;
+    max-width: 600px;
+}
+
+.admin-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.admin-section p {
+    font-size: 1em;
+    color: #555;
+}
+
+.admin-section button {
+    padding: 10px 20px;
+    background-color: #333; /* Dark button matching website's theme */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.admin-section button:hover {
+    background-color: #555; /* Lighter shade on hover */
+}
+
+/* Black Navbar Styles */
+.navbar {
+    background-color: #000; /* Black background */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container for logo and navigation items */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo styles */
+.navbar-logo {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.navbar-logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+}
+
+/* Navigation links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333; /* Dark gray on hover */
+}
+
+.navbar a.active {
+    background-color: #555; /* Lighter shade of black for active link */
+}
+
+

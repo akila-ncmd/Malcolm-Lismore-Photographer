@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malcolm Lismore</title>
+    <link rel="icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="HomePage.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <div class="icon">
+            <img src="Images/web-icon.png" alt="Website Icon" style="width: 200px; margin-top: 10px; margin-left: 20px;">
+        </div>
+        <nav class="list">
+            <ul>
+                 <li><a href="HomePage.php">Home</a></li>
+                <li><a href="about_page.php">About</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="prices.php">Prices</a></li>
+                <li><a href="inquiry.html">Inquiry</a></li>
+                <li><a href="LOGIN.html">Admin</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+    <section>
+        <div class="main" id="home">
+             <div class="body-main">
+                <div class="welcome-text">
+                    <h1 class="welcome-text-1">Welcome to Malcolm Lismore Photography Website</h1>
+                    <p class="welcome-text-2">Capturing the beauty of nature</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-website" id="about">
+        <h2 class="header">WE CAPTURE THE MOMENTS</h2>
+        <p class="description">
+            At Capturer, we specialize in freezing those fleeting moments in time that hold immense significance for you.
+            With our passion for photography and keen eye for detail, we transform ordinary moments into extraordinary memories.
+        </p>
+      <p class="description">
+            Whether it's a milestone event, a candid portrait, or the breathtaking beauty of nature, we strive to encapsulate the essence of every moment, ensuring that your cherished memories last a lifetime. Trust us to capture the magic of your life's journey, one frame at a time.
+      </p>
+        <img src="Images/logo.png" alt="Capturer Logo" >
+        <div class="about-btn">
+            <button class="btn"><a href="about_page.php">VIEW ABOUT</a></button>
+        </div>
+    </section>
+
+    <section class="section__container gallery__container" id="gallery">
+        <h2 class="section__header">~ GALLERY ~</h2>
+        <div class="gallery__grid">
+            <img src="Images/1.jpg" alt="Gallery Image 1" />
+            <img src="Images/2.jpg" alt="Gallery Image 2" />
+            <img src="Images/3.jpg" alt="Gallery Image 3" />
+            <img src="Images/4.jpeg" alt="Gallery Image 4" />
+            <img src="Images/5.jpeg" alt="Gallery Image 5" />
+            <img src="Images/6.jpg" alt="Gallery Image 6" />
+            <img src="Images/7.jpg" alt="Gallery Image 7" />
+            <img src="Images/8.jpg" alt="Gallery Image 8" />
+        </div>
+        <div class="gallery__btn">
+            <button class="btn" id="viewGalleryBtn" >VIEW GALLERY</button>
+        </div>
+    </section>
+
+   <footer id="contact">
+    <div class="section__container footer__container">
+        <div class="footer__col">
+            <h4>STAY IN TOUCH</h4>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Malcolm Lismore</h2>
+            <p>Email: malcolm@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i> Instagram </a>
+            <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-line"></i> Facebook</a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="ri-whatsapp-line"></i> Whatsapp </a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="ri-linkedin-line"></i> LinkedIn </a>
+        </div>
+        <p class="footer__col-1">
+            Keep up-to-date with all things Capturer! Join our community and never miss a moment!
+        </p>
+    </div>
+    <div class="footer__bar">
+        Copyright © 2023 Malcolm Lismore Photography. All rights reserved.
+    </div>
+</footer>
+
+ <script>
+        document.getElementById('viewGalleryBtn').addEventListener('click', function() {
+            document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
